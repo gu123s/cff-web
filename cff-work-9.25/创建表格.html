@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #d{
+            position: relative;
+        }
+    #d > div {
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        position: absolute;
+        background-image: url(1.jpg);
+        transition: 0.5s;
+        opacity: 0.1;
+    }
+    </style>
+</head>
+<body>
+    <div id="d"></div>
+    <script>
+     var d = document.getElementById('d')
+     for(var i=0;i<10;i++){
+     for(var j=0;j<6;j++){
+     var div = document.createElement('div');
+     d.appendChild(div);
+     div.style.left = i * 50 + 'px';
+     div.style.top = j * 50 + 'px';
+     div.style.backgroundPositionY = j * -50 + 'px';
+     div.style.backgroundPositionX = i * -50 + 'px';
+     div.onmousemove= function(){
+    this.style.opacity = 1;
+     }
+     }
+     }
+    </script>
+</body>
+</html>
