@@ -1,0 +1,14 @@
+.wrap .zhong .chang img{
+    width: 1110px;
+    height: 205px;
+    margin-left: 190px;
+}
+#duan img:nth-child(1){
+    height: 207px;
+    width: 540px;
+}
+#duan img:nth-child(2){
+    height: 207px;
+    width: 540px;
+    margin-left: 25px;
+}

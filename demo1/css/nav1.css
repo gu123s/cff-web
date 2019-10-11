@@ -1,0 +1,53 @@
+.wrap .nav1 button{
+    font-weight: 600;
+    width: 255px;
+    height: 64px;
+    background-color: #73b320;
+    font-size: 18px;
+    color: #fff;
+    border-width: 0;
+}
+.wrap .nav1 button img{
+    width: 20px;
+    height: 20px;
+    margin-right:20px; 
+}
+.nav1{
+    background-color: #333333;
+    height: 64px;
+    width: 100%;
+}
+#lv{
+    margin-left: 12%;
+}
+
+.wrap .nav1 button:hover{
+background-color: #39b0ff;
+transition: background-color 1s;
+}
+#le{
+    margin: 0 auto;
+    margin-left: 30%;
+    margin-top: -45px;
+}
+.wrap .nav1 a{
+    margin-left: 50px;
+    color: #fff;
+    display: inline-block;
+}
+.wrap .nav1 a:hover{
+    color: #555555;
+    transition: 1s;
+}
+.wrap .nav1 a > i {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-right:2px solid #ffffff ;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(45deg) translateY(-3px);
+}
+
+
+
+

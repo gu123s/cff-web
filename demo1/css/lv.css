@@ -1,0 +1,23 @@
+.lvs{
+    width: 100%;
+    height: 114px;
+    background-color: #73b320;
+}
+.warp .lvs .zhong img{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+.warp .lvs .zhong{
+    float:right;
+    margin-right: 150px;
+}
+.warp .lvs .zhong h4{
+    margin-left: 70px;
+    margin-top: -45px;
+}
+.warp .lvs .zhong p {
+    margin-left: 70px;
+    color: #fff;
+    font-size: 12px;
+}
