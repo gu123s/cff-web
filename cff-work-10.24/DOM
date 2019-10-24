@@ -1,0 +1,98 @@
+DOM
+节点
+1.1 Node
+1.1.1nodeType属性值
+ELEMENT-NODE=1元素节点
+ATTRIBUTE-NODE=2元素节点
+TEXT-NODE=3 文本节点
+CDATA-SECTIQN-NODE=4
+ENTITY-PREFERENCE-NODE=5
+ENTITY-NODE=6
+PROCESSING-INSTRUCTIQN-NODE=7
+COMMENT-NODE=8 注释节点
+DOCUMENT-NODE=9
+
+1.1.2节点中的关系
+firstChild,lastChild
+childNodes
+parentNode
+previousSibling
+nextSibling
+
+1.1.3操作节点
+appendChild()在节点末尾添加
+removeChild（）删除某个节点
+insertBefore()在某个节点前插入节点
+replaceChild()替换某个节点
+cloneNode()是否克隆一个节点
+
+
+1.2 Document
+1.2.1常用属性
+documentElement取得<html>的引用
+body取得<body>的引用
+doctype取得<!DOCTYPE>引用
+title网页标题
+URL
+domain域名
+Subtopic
+
+1.2.2 查找元素
+getElementByid()获得指定id的节点
+getElementsBytagName()获得指定标签的节点数组
+getElementsByName（）通过指定的name属性值获取节点
+
+1.3 Element
+1.3.1 常用属性
+1.3.1.1 id元素的id
+1.3.1.2 className元素的CSS class名称
+1.3.1.3 attributes
+获得属性值
+（1）element.attributes.getNameltem（‘id’）.nodeValue；
+（2）element.attributes["id"].nodeValue
+设置属性值
+（1）element.attributes【“id”】.nodeValue
+删除属性值
+（1）element.attbutes.removeNameltem（“id”）
+添加属性值
+（1）element.attributes.setNameltem（newattr）
+1.3.1.4 childNodes 获取元素子节点
+
+1.3.2属性操作
+getAttribute("xxx")获得指定的属性值
+setAttribut("xxx","xxx")设置属性值
+removeAttribute("xxx")移除属性
+creaElement（）创建指定名称元素
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
