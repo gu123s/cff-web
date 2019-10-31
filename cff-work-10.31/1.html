@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script src="../jquery.js"></script>
+    <style>
+        div{
+          width: 300px;
+          height: 300px;
+          float: left;
+        }
+        div:nth-child(3){
+         box-sizing: border-box;
+          padding-top: 110px;
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+                <p>小米8</p>
+                <p>单价：2000￥</p>
+                <input type="button" name="" id="jia" value="+">
+                <input type="text" name="" id="nr">
+                <input type="button" name="" id="jian" value="-">
+                <br>
+                <p>价格：<small id="xs"></small></p> 
+        </div>
+
+        <div>
+            <p>华为mate20</p>
+            <p>单价：4000￥</p>
+            <input type="button" name="" id="jiaa" value="+">
+            <input type="text" name="" id="nra">
+            <input type="button" name="" id="jiana" value="-">
+             <br>
+             <p>价格：<small id="xsa"></small></p> 
+          </div>
+
+                 <div>
+                 <p>总价：<small id="zh"></small></p>  
+                 </div>
+            <script>
+                var $count = 1 ;
+               $('#nr').val($count);
+               $('#jia').click(function(){     
+                $count = $count + 1;
+                $('#nr').val($count);
+                var $c = $count*2000 ;
+                 $("#xs").html($c);     
+                 $("#zh").html($counta*4000 + $count*2000);
+             })
+           $('#jian').click(function(){  
+            if ($count == 0){
+                return;
+             } 
+            $coun = $count--;
+                 $('#nr').val($count);
+                 console.log($count);
+                 var $c = $count*2000 ;
+                 $("#xs").html($c);      
+                 $("#zh").html($counta*4000 + $count*2000);
+              })
+               
+              var $counta = 1 ;
+               $('#nra').val($counta);
+               $('#jiaa').click(function(){     
+                $counta = $counta + 1;
+                $('#nra').val($counta);
+                var $ca = $counta*4000 ;     
+                 $("#xsa").html($ca);  
+                 $("#zh").html($counta*4000 + $count*2000);
+             })
+           $('#jiana').click(function(){  
+            if ($counta == 0){
+                return;
+             } 
+            $couns = $counta--;
+                 $('#nra').val($counta);
+                 var $ca = $counta*4000 ;     
+                 $("#xsa").html($ca);  
+              })
+              var $ca = $counta*4000 ; 
+              $('#ioa').click(function(){ 
+                var $ca = $counta*4000 ;     
+                 $("#xsa").html($ca);       
+                 $("#zh").html($counta*4000 + $count*2000);   
+              })           
+            </script>
+
+
+</body>
+</html>
